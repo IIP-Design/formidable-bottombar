@@ -1,0 +1,147 @@
+.frmbottombar {
+    padding: 0;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #333;
+    color: #fff;
+    display: none;
+}
+.frmbottombar .frmbottombar-wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.frmbottombar fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: 80px;
+}
+.frmbottombar fieldset label {
+    display:none;
+}
+.frmbottombar fieldset div {
+    display: inline-block;
+}
+.frmbottombar fieldset input {
+    height: 34px;
+    position: relative;
+    font-size: 13px;
+}
+.frmbottombar .frm_description {
+    float: left;
+    width: 50%;
+}
+.frmbottombar .frm_description p {
+    margin: 0;
+    padding: 0;
+    line-height: 80px;
+}
+.frmbottombar .form-field {
+    float: left;
+    width: 35%;
+}
+.frmbottombar .frm_submit {
+    float: left;
+    width: 15%;
+}
+.frmbottombar .formidable-close {
+    position: fixed;
+    line-height: 80px;
+    right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.frmbottombar .frm_message {
+    text-align: center;
+}
+.frmbottombar .frm_message p {
+    line-height: 80px;
+    padding: 0;
+    margin: 0;
+}
+.frmbottombar .frm_error {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    position: fixed;
+    bottom: 80px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 14px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+}
+.frmbottombar .frm_error_style {
+    color: #D8000C;
+    background-color: #FFBABA;
+    position: fixed;
+    bottom: 94px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 14px;
+    text-align: center;
+    font-size: 12px;
+}
+.frmbottombar .frm_error_style p {
+    margin: 0;
+    line-height: 14px;
+}
+.frmbottombar input[type=submit] {
+    background: #80a3bc;
+}
+.frmbottombar input[type=submit]:hover {
+    background: #6c8fa8;
+}
+.frmbottombar input[type=submit][disabled] {
+    background: #6c8fa8;
+    color: #eee;
+}
+
+/* Mobile and breakpoint adjustments */
+@media (max-width: 768px) {
+    .frmbottombar .frm_description {
+        width: 100%;
+    }
+    .frmbottombar .frm_description p {
+        font-size: 13px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .frmbottombar .form-field {
+        width: 80%;
+    }
+    .frmbottombar .frm_submit {
+        width: 20%;
+    }
+    .frmbottombar fieldset div {
+        line-height: 35px;
+    }
+    .frmbottombar fieldset input {
+        padding: 2px 4px;
+    }
+    .frmbottombar .formidable-close {
+        right: 10px;
+    }
+    .frmbottombar .frm_message p,
+    .frmbottombar .frm_error_style p {
+        font-size: 11px;
+    }
+}
+@media (max-width: 480px) {
+    .frmbottombar .frm_description p {
+        font-size: 11px;
+    }
+    .frmbottombar fieldset input {
+        font-size: 10px;
+    }
+}
