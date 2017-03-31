@@ -106,6 +106,9 @@
     background: #6c8fa8;
     color: #eee;
 }
+.frmbottombar .frm_hidden {
+    display: none;
+}
 
 /* Mobile and breakpoint adjustments */
 @media (max-width: 768px) {
